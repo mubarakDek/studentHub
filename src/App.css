@@ -1,38 +1,90 @@
-.App {
+:root {
+  --main: #216869;
+  --light: #f0f3f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+
+.header {
+  min-height: calc(100vh - 112px);
+  background-color: var(--light);
+}
+.header-hero {
+  min-height: calc(100vh - 56px);
+  background: url("/images/bg.jpg") center/cover no-repeat;
+}
+
+.header-hero h1 {
+  font-size: 3rem;
+}
+
+.btn-primary {
+  background-color: var(--main) !important;
+}
+
+.card-header {
+  background-color: var(--main) !important;
+}
+
+/*NAVBAR COMPONENT*/
+.top-nav {
+  background-color: var(--main) !important;
+  color: #fff;
+}
+
+.navbar-nav li a,
+.navbar-brand {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+/*STUDENT COMPONENT*/
+.student-card {
+  border-radius: 8px;
+  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.student-card img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 4rem !important;
+  margin: 0 0 1rem 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.student-card h5 {
+  margin-bottom: 0;
+}
+.card-body p {
+  margin-bottom: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*Default PAGE */
+
+.default-hero h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+  margin-top: -10rem;
 }
 
-.App-link {
-  color: #61dafb;
+.default-hero p {
+  font-size: 1.3rem;
+  width: 20rem;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*FOOTER COMPONENT*/
+footer {
+  background-color: var(--main);
 }
